@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mantova Turismo</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, sans-serif;
+    background-color:#f4f1ea;
+    color:#222;
+    line-height:1.6;
+}
+
+header{
+    background:linear-gradient(135deg,#7b1e1e,#d49b45);
+    color:white;
+    text-align:center;
+    padding:55px 20px;
+}
+
+header h1{
+    font-size:45px;
+}
+
+header p{
+    font-size:20px;
+}
+
+nav{
+    background-color:#222;
+    text-align:center;
+    padding:15px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:10px;
+    font-weight:bold;
+}
+
+nav a:hover{
+    color:#d49b45;
+}
+
+.hero{
+    background-color:white;
+    text-align:center;
+    padding:50px 20px;
+}
+
+.hero h2{
+    color:#7b1e1e;
+    font-size:35px;
+    margin-bottom:15px;
+}
+
+section{
+    padding:40px 10%;
+}
+
+section h2{
+    color:#7b1e1e;
+    margin-bottom:20px;
+    font-size:30px;
+    border-bottom:3px solid #d49b45;
+    display:inline-block;
+}
+
+.card{
+    background-color:white;
+    padding:20px;
+    margin:20px 0;
+    border-left:6px solid #7b1e1e;
+    border-radius:10px;
+    box-shadow:0 0 10px rgba(0,0,0,0.1);
+}
+
+.card h3{
+    color:#7b1e1e;
+    margin-bottom:10px;
+}
+
+.immagine{
+    width:260px;
+    height:170px;
+    background-color:#cccccc;
+    display:inline-block;
+    margin:10px 20px 10px 0;
+    border-radius:15px;
+    overflow:hidden;
+    vertical-align:top;
+}
+
+.immagine img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+.testo{
+    display:inline-block;
+    width:60%;
+    vertical-align:top;
+}
+
+ol{
+    background-color:white;
+    padding:25px 40px;
+    border-radius:10px;
+}
+
+ol li{
+    margin:10px 0;
+}
+
+.mappa{
+    background-color:white;
+    border:3px dashed #7b1e1e;
+    height:250px;
+    border-radius:10px;
+    text-align:center;
+    padding-top:110px;
+}
+
+.galleria{
+    text-align:center;
+}
+
+.foto{
+    width:220px;
+    height:150px;
+    display:inline-block;
+    margin:10px;
+    border-radius:15px;
+    overflow:hidden;
+    background-color:#cccccc;
+}
+
+.foto img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+footer{
+    background-color:#222;
+    color:white;
+    text-align:center;
+    padding:25px;
+    margin-top:40px;
+}
+
+</style>
+
+</head>
+<body>
+
+<header>
+    <h1>MANTOVA</h1>
+    <p>Scopri la storia, l'arte e la cultura della città di Mantova</p>
+</header>
+
+<nav>
+    <a href="#monumenti">Monumenti</a>
+    <a href="#musei">Musei</a>
+    <a href="#ristoranti">Cucina</a>
+    <a href="#eventi">Eventi</a>
+    <a href="#galleria">Galleria</a>
+</nav>
+
+<section class="hero">
+    <h2>Benvenuto a Mantova</h2>
+
+    <div class="immagine">
+        <img src="mantova.jpg" alt="Panorama di Mantova">
+    </div>
+
+    <div class="testo">
+        <p>
+            Mantova è una città della Lombardia famosa per i suoi monumenti,
+            i palazzi storici, la cultura rinascimentale e la tradizione gastronomica.
+            Questo sito ha lo scopo di presentare le principali attrazioni della città
+            in modo semplice e ordinato.
+        </p>
+    </div>
+</section>
+
+<section id="monumenti">
+    <h2>Monumenti Principali</h2>
+
+    <div class="card">
+
+        <div class="immagine">
+            <img src="palazzo-ducale.webp" alt="Palazzo Ducale">
+        </div>
+
+        <div class="testo">
+            <h3>Palazzo Ducale</h3>
+            <p>
+                Palazzo Ducale è uno dei simboli principali di Mantova.
+                Fu la residenza della famiglia Gonzaga ed è uno dei complessi
+                monumentali più importanti d'Italia.
+            </p>
+        </div>
+    </div>
+
+    <div class="card">
+
+        <div class="immagine">
+            <img src="palazzo-te.jpg" alt="Palazzo Te">
+        </div>
+
+        <div class="testo">
+            <h3>Palazzo Te</h3>
+            <p>
+                Palazzo Te è un famoso palazzo rinascimentale progettato da Giulio Romano.
+                È conosciuto soprattutto per gli affreschi e per le sue sale decorate.
+            </p>
+        </div>
+    </div>
+
+    <div class="card">
+
+        <div class="immagine">
+            <img src="santa-andrea.jpg" alt="Basilica di Sant'Andrea">
+        </div>
+
+        <div class="testo">
+            <h3>Basilica di Sant'Andrea</h3>
+            <p>
+                La Basilica di Sant'Andrea è una delle chiese più importanti della città.
+                È stata progettata da Leon Battista Alberti ed è un esempio importante
+                dell'architettura rinascimentale.
+            </p>
+        </div>
+    </div>
+</section>
+
+<section id="musei">
+    <h2>Musei</h2>
+
+    <div class="card">
+
+        <div class="immagine">
+            <img src="palazzo-ducale-int.avif" alt="Museo di Palazzo Ducale">
+        </div>
+
+        <div class="testo">
+            <h3>Museo di Palazzo Ducale</h3>
+            <p>
+                Il museo conserva opere d'arte, stanze storiche e testimonianze
+                legate alla storia della città e alla famiglia Gonzaga.
+            </p>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="immagine">
+            <img src="palazzo-te-interno.jpg" alt="Museo di Palazzo Te">
+        </div>
+
+        <div class="testo">
+            <h3>Museo di Palazzo Te</h3>
+            <p>
+                Il museo permette di visitare alcune delle sale artistiche più famose
+                del Rinascimento italiano, ricche di affreschi e decorazioni.
+            </p>
+        </div>
+    </div>
+</section>
+
+<section id="ristoranti">
+    <h2>Cucina Tipica</h2>
+
+    <div class="card">
+        <div class="immagine">
+            <img src="tortelli-di-zucca.webp" alt="Tortelli di zucca">
+        </div>
+
+        <div class="testo">
+            <h3>Specialità Mantovane</h3>
+            <p>
+                La cucina mantovana è molto conosciuta per piatti come i tortelli di zucca,
+                il risotto alla pilota e la torta sbrisolona. Questi piatti rappresentano
+                una parte importante della tradizione locale.
+            </p>
+        </div>
+    </div>
+</section>
+
+<section id="eventi">
+    <h2>Eventi</h2>
+
+    <div class="card">
+        <div class="immagine">
+            <img src="festa.jpg" alt="Festivaletteratura Mantova">
+        </div>
+
+        <div class="testo">
+            <h3>Festivaletteratura</h3>
+            <p>
+                Festivaletteratura è una manifestazione culturale molto importante
+                che ogni anno ospita scrittori, giornalisti e lettori provenienti
+                da diverse città.
+            </p>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="immagine">
+            <img src="grazie.jpg" alt="Eventi a Mantova">
+        </div>
+
+        <div class="testo">
+            <h3>Fiere e Manifestazioni</h3>
+            <p>
+                Durante l'anno Mantova ospita fiere, mercatini, eventi culturali
+                e manifestazioni gastronomiche che attirano turisti e cittadini.
+            </p>
+        </div>
+    </div>
+</section>
+
+<section id="itinerario">
+    <h2>Itinerario Consigliato</h2>
+
+    <div class="immagine">
+        <img src="centro-storico.jpg" alt="Piazza Sordello">
+    </div>
+
+    <div class="testo">
+        <ol>
+            <li>Piazza Sordello</li>
+            <li>Palazzo Ducale</li>
+            <li>Centro Storico</li>
+            <li>Pranzo con cucina tipica mantovana</li>
+            <li>Palazzo Te</li>
+            <li>Passeggiata lungo i laghi di Mantova</li>
+        </ol>
+    </div>
+</section>
+
+
+<section id="galleria">
+    <h2>Galleria Fotografica</h2>
+
+    <div class="galleria">
+
+        <div class="foto">
+            <img src="palazzo-ducale.webp" alt="Palazzo Ducale">
+        </div>
+
+        <div class="foto">
+            <img src="palazzo-te.jpg" alt="Palazzo Te">
+        </div>
+
+        <div class="foto">
+            <img src="santa-andrea.jpg" alt="Basilica di Sant'Andrea">
+        </div>
+
+        <div class="foto">
+            <img src="laghi.webp" alt="Laghi di Mantova">
+        </div>
+
+    </div>
+</section>
+
+<footer>
+    <p>Capolavoro di Fine Anno - Classe 3ª BIIN Informatica</p>
+    <p>Bombonati Lorenzo</p>
+</footer>
+
+</body>
+</html>
